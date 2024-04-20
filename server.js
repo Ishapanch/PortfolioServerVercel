@@ -59,7 +59,8 @@ const contactEmail = nodemailer.createTransport({
         subject: "Portfolio Contact Form Submission",
         html: `<p>Thanks for submmiting the form , Isha will get in touch with you soon</p>
         <br><br>
-                From: <img src="https://logos.textgiraffe.com/logos/logo-name/Isha-designstyle-pastel-m.png" width="100">`,
+                From: <img src="https://portfolio-server-sandy.vercel.app/signature.png" width="100">`,
+                // From: <img src="https://logos.textgiraffe.com/logos/logo-name/Isha-designstyle-pastel-m.png" width="100">`,
       };
     contactEmail.sendMail(mail, (error) => {
       if (error) {
